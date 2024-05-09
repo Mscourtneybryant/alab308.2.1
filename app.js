@@ -7,13 +7,13 @@ let minPlantSpace = 0.8;
 let initialPlantAmount = 20;
 let plantsDouble = initialPlantAmount * 2;
 
-let doubleUp = 0.8 * 2
+let doubleUp = 20 * 2
 console.log(doubleUp)
 
 
 
 //predict the plant growth after a specific number of weeks
-let weekOne = doubleUp * 20
+let weekOne = doubleUp * 0.8
 console.log(weekOne) 
 
 
@@ -31,10 +31,15 @@ if (pruned > .80){
 //monitored - growing at an acceptable rate
 
 function monitored (num1){
-    let weekTwo = 32 * 2;
+    let weekTwo = 20 * 4;
     console.log(weekTwo)
 
-    let growingRate = 64 
+    let growingRate = 0.8 * weekTwo;
+    console.log(growingRate)
+
+    let areaForWeekTwo = 78.53 % growingRate;
+    console.log(areaForWeekTwo)
+
   if(num1 > .50 || .80){
     console.log("Plants are growing at an acceptable rate.")
   }else{
@@ -42,3 +47,13 @@ function monitored (num1){
   }
 }
 monitored(64)
+
+
+//planted - is there room to plant more plants
+
+let weekThree = 20 * 6;
+console.log(weekThree)
+
+let areaWeekThree = weekThree * 0.8;
+console.log(areaWeekThree)
+
