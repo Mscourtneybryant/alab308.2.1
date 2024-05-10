@@ -33,9 +33,6 @@ weeklyCheck(3); //week three growth
 
 
 
-
-
-
 //------------------------------PART TWO-------------------------------//
 
 // plant ammount is starting off with 100 now. Calculate how much space is needed based off this amount
