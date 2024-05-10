@@ -6,8 +6,7 @@ console.log(area); //78.53
 let minPlantSpace = 0.8;
 let initialPlantAmount = 20;
 let plantsDouble = initialPlantAmount * 2;
-
-let doubleUp = 20 * 2
+let doubleUp = initialPlantAmount * 2
 console.log(doubleUp)
 
 
@@ -30,8 +29,8 @@ if (pruned > .80){
 
 //monitored - growing at an acceptable rate
 
-function monitored (num1){
-    let weekTwo = 20 * 4;
+
+    let weekTwo = 40 * 2;
     console.log(weekTwo)
 
     let growingRate = 0.8 * weekTwo;
@@ -40,13 +39,12 @@ function monitored (num1){
     let areaForWeekTwo = 78.53 % growingRate;
     console.log(areaForWeekTwo)
 
-  if(num1 > .50 || .80){
+  if( growingRate > .50 || .80){
     console.log("Plants are growing at an acceptable rate.")
   }else{
     console.log("Plants are growing to fast!")
   }
-}
-monitored(64)
+
 
 
 //planted - is there room to plant more plants
@@ -57,3 +55,8 @@ console.log(weekThree)
 let areaWeekThree = weekThree * 0.8;
 console.log(areaWeekThree)
 
+if (areaWeekThree < .50){
+console.log("There is eniugh room to plant")
+}else{
+    console.log("There isnt eough room to plant")
+}
