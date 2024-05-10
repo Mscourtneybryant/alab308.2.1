@@ -4,78 +4,35 @@
 const PI = 3.1415;
 const radius = 5;
 const area = PI * radius * radius; //78.53
-let initialPlantAmount = 20;
-let minPlantSpace = 0.8;
-let doubleUp = initialPlantAmount * 2;
+const initialPlantAmount = 20;
+const minPlantSpace = 0.8;
+let maxSpace = area / minPlantSpace;
 
 
+// predict the plant growth after a specific number of weeks
+// calculate when it is time for plants to be pruned
+// calculate if the plants are growing at an acceptable rate
 
+function weeklyCheck(currentWeek){
 
+  const plantCount = initialPlantAmount * Math.pow(2, currentWeek);
 
-
-//predict the plant growth after a specific number of weeks
-
-function weekOneCheck(num1,num2){
-
-  if(num1 * num2){
-    console.log(num1 * num2)
-  }
-    
-
-}
-
-weekOneCheck(doubleUp, 0.8);
-
-
-
-
-//pruned - to stop from exceeding capacity of garden
-
-let pruned = area % minPlantSpace;
-console.log(pruned)
-
-if (pruned > .80){
-    console.log("Its time to prune")
-}else {
-    console.log("Its not time to prune")
-}
-
-//monitored - growing at an acceptable rate
-
-
-    let weekTwo = 40 * 2;
-    console.log(weekTwo)
-
-    let growingRate = 0.8 * weekTwo;
-    console.log(growingRate)
-
-    let areaForWeekTwo = 78.53 % growingRate;
-    console.log(areaForWeekTwo)
-
-  if( growingRate > .50 || .80){
-    console.log("Plants are growing at an acceptable rate.")
+  if (plantCount > maxSpace * 0.8){
+    console.log("Its time to prune the plants!!")
+  } else if(plantCount >= maxSpace * 0.5 && plantCount <= maxSpace * 0.8){
+    console.log("Monitor the plants!")
   }else{
-    console.log("Plants are growing to fast!")
+    console.log("Time to plant more plants!")
   }
 
-
-
-//planted - is there room to plant more plants
-
-let weekThree = 80 * 2;
-console.log(weekThree)
-
-let areaWeekThree = weekThree * 0.8;
-console.log(areaWeekThree)
-
-let thirdWeekGrowRate = areaWeekThree * 5
-console.log(thirdWeekGrowRate)
-
-if (areaWeekThree < thirdWeekGrowRate){
-console.log("There is enough room to plant")
-}else{
-    console.log("There isnt enough room to plant")
 }
+
+weeklyCheck(1); //week one growth
+weeklyCheck(2); //week two growth
+weeklyCheck(3); //week three growth
+
+
+
 
 
 
