@@ -3,20 +3,30 @@
 
 const PI = 3.1415;
 const radius = 5;
-const area = PI * radius * radius;
-console.log(area); //78.53
-
-let minPlantSpace = 0.8;
+const area = PI * radius * radius; //78.53
 let initialPlantAmount = 20;
-let plantsDouble = initialPlantAmount * 2;
-let doubleUp = initialPlantAmount * 2
-console.log(doubleUp)
+let minPlantSpace = 0.8;
+let doubleUp = initialPlantAmount * 2;
+
+
+
 
 
 
 //predict the plant growth after a specific number of weeks
-let weekOne = doubleUp * 0.8
-console.log(weekOne) 
+
+function weekOneCheck(num1,num2){
+
+  if(num1 * num2){
+    console.log(num1 * num2)
+  }
+    
+
+}
+
+weekOneCheck(doubleUp, 0.8);
+
+
 
 
 //pruned - to stop from exceeding capacity of garden
