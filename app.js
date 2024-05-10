@@ -1,3 +1,6 @@
+//--------------------------------PART ONE------------------------------//
+
+
 const PI = 3.1415;
 const radius = 5;
 const area = PI * radius * radius;
@@ -49,14 +52,28 @@ if (pruned > .80){
 
 //planted - is there room to plant more plants
 
-let weekThree = 20 * 6;
+let weekThree = 80 * 2;
 console.log(weekThree)
 
 let areaWeekThree = weekThree * 0.8;
 console.log(areaWeekThree)
 
-if (areaWeekThree < .50){
-console.log("There is eniugh room to plant")
+let thirdWeekGrowRate = areaWeekThree * 5
+console.log(thirdWeekGrowRate)
+
+if (areaWeekThree < thirdWeekGrowRate){
+console.log("There is enough room to plant")
 }else{
-    console.log("There isnt eough room to plant")
+    console.log("There isnt enough room to plant")
 }
+
+
+
+//------------------------------PART TWO-------------------------------//
+
+let newPlantAmount = 100;
+let newPlantArea = newPlantAmount * PI ;
+console.log(newPlantArea)
+
+let unprunedRadius = newPlantArea * (10 * 2);
+console.log(unprunedRadius)
