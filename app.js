@@ -77,3 +77,16 @@ console.log(newPlantArea)
 
 let unprunedRadius = newPlantArea * (10 * 2);
 console.log(unprunedRadius)
+
+
+//------------------------------PART THREE------------------------------//
+
+let multiplyRadiusAndPI = radius * PI;
+
+try {
+  100 * area === minPlantSpace
+}
+catch(err) {
+  plantArea * weekOne === multiplyRadiusAndPI
+}
+throw "There isnt enough space for the plants!";
