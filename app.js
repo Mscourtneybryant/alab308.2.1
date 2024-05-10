@@ -38,12 +38,18 @@ weeklyCheck(3); //week three growth
 
 //------------------------------PART TWO-------------------------------//
 
-let newPlantAmount = 100;
-let newPlantArea = newPlantAmount * PI ;
-console.log(newPlantArea)
+// plant ammount is starting off with 100 now. Calculate how much space is needed based off this amount
 
-let unprunedRadius = newPlantArea * (10 * 2);
-console.log(unprunedRadius)
+let newPlantAmount = 100;
+let newPlantArea = newPlantAmount * minPlantSpace;
+console.log(`The new area needed to hold ${newPlantAmount} plants is ${newPlantArea} meters`)
+
+
+// if the space remains circular what would the new radius be
+
+
+let newRadius = newPlantAmount / radius * PI
+console.log(newRadius);
 
 
 //------------------------------PART THREE------------------------------//
