@@ -48,18 +48,18 @@ console.log(`The new area needed to hold ${newPlantAmount} plants is ${newPlantA
 // if the space remains circular what would the new radius be
 
 
-let newRadius = newPlantAmount / radius * PI
-console.log(newRadius);
+let newRadius = newPlantAmount / radius
+console.log(`The new radius for ${newPlantAmount} plants is ${newRadius}`);
 
 
 //------------------------------PART THREE------------------------------//
 
-let multiplyRadiusAndPI = radius * PI;
+let multiplyRadiusAndPlants = radius * newPlantAmount;
 
 try {
   100 * area === minPlantSpace
 }
 catch(err) {
-  plantArea * weekOne === multiplyRadiusAndPI
+  plantArea * weekOne === multiplyRadiusAndPlants
 }
 throw "There isnt enough space for the plants!";
